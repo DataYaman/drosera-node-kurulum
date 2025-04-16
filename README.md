@@ -78,6 +78,14 @@ sudo cp drosera-operator /usr/bin
 drosera-operator --version
 ```
 
+🔁 systemd ile Drosera Node’u Arka Planda Çalıştırma (Detaylı)
+Aşağıdaki komutu çalıştırmadan önce şu değişkenleri kendi bilgilerinle doldur:
+
+PV_KEY → EVM cüzdan private key’in
+
+VPS_IP → Sunucunun IP adresi (ya da localhost)
+
+```bash
 sudo tee /etc/systemd/system/drosera.service > /dev/null <<EOF
 [Unit]
 Description=drosera node service
@@ -100,6 +108,7 @@ ExecStart=$(which drosera-operator) node --db-file-path $HOME/.drosera.db --netw
 [Install]
 WantedBy=multi-user.target
 EOF
+```
 
 
 
