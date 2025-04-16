@@ -5,6 +5,7 @@ Bu rehber, Drosera Operator Node'unu sıfırdan yeni bir sunucuya kurmak isteyen
 ---
 
 ## 1️⃣ Gerekli Bağımlılıklar
+![fe4a5f15986d9999cde644f16814154b](https://github.com/user-attachments/assets/4001826f-918c-40a5-8cc2-f3b4a2b0e5e2)
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
